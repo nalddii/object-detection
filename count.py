@@ -56,10 +56,10 @@ def predict(model_path, image_path, output_path):
     prediction_result = get_sliced_prediction(
         image_path,
         detection_model,
-        slice_height=704,
-        slice_width=704,
-        overlap_height_ratio=0.25,
-        overlap_width_ratio=0.25,
+        slice_height=740,
+        slice_width=740,
+        overlap_height_ratio=0.2,
+        overlap_width_ratio=0.2,
     )
     if not prediction_result:
         raise RuntimeError("Prediction result is empty.")
